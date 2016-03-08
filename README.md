@@ -1,6 +1,6 @@
 # todo-angular-frontend
 
-showcase todo app based with angular.js on frontend
+showcase todo app frontend based on angular.js
 
 # Get started
 
