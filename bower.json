@@ -1,0 +1,25 @@
+{
+  "name": "todo-angular",
+  "authors": [
+    "zyevegor <zyev.egor@rambler.ru>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "https://github.com/ega-forever/maps-showcase",
+  "dependencies": {
+    "angular-cookies": "~1.5.0",
+    "angular-resource": "~1.5.0",
+    "angular-bootstrap": "~1.2.1",
+    "angular-ui-router": "~0.2.18",
+    "lodash": "~4.5.1"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

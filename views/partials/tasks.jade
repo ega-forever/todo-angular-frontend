@@ -1,0 +1,24 @@
+.container.main-container
+    .col-sm-4.jumbotron
+        h2  Add task
+        form(name="form", novalidate)
+            .form-group(ng-class="{'has-error' : !_.isEmpty(form.task.$error)}")
+                input.form-control.ng-pristine.ng-valid.ng-empty.ng-touched(
+                type="text",
+                name="task",
+                placeholder="task name",
+                ng-model="vm.task",
+                input-validation="{ tasks: vm.tasks}",
+                uib-tooltip="{{ _.keys(form.task.$error).join('/n') }}"
+                tooltip-placement="top"
+                tooltip-trigger="mouseenter"
+                tooltip-enable="true")
+
+            .form-group
+                button.btn.btn-primary(ng-click="vm.add()", type="submit", ng-disabled="form.$invalid") add
+
+    .col-sm-6.col-sm-offset-2.jumbotron
+        ul.list-group
+            li.list-group-item(ng-repeat="item in vm.tasks")
+                span.badge(ng-click="vm.remove(item)") x
+                | {{item.name}}
