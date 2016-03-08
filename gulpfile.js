@@ -25,13 +25,13 @@ gulp.task('js', function () {
         .pipe(gulp.dest('dist/js'))
         .pipe(browserSync.reload({stream: true}))
 });
-
+/*
 gulp.task('jasmine', function () {
     gulp.src('tests/*.js')
         .pipe(gulp.dest('dist/js/tests'))
         .pipe(browserSync.reload({stream: true}))
 });
-
+*/
 
 gulp.task('html', function () {
     gulp.src('views/**/*.jade')
@@ -60,7 +60,7 @@ gulp.task('watch', function () {
     gulp.start('css');
     gulp.start('html');
     gulp.start('js');
-    gulp.start('jasmine');
+    //gulp.start('jasmine');
     gulp.start('fonts');
     gulp.start('bower');
 
@@ -75,7 +75,7 @@ gulp.task('compile',  function(){
     gulp.start('css');
     gulp.start('html');
     gulp.start('js');
-    gulp.start('jasmine');
+    //gulp.start('jasmine');
     gulp.start('fonts');
     gulp.start('bower');
 });
